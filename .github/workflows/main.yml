@@ -12,7 +12,7 @@ jobs:
         uses: tailcallhq/gh-action@v0.2
         with:
           # mandatory
-          provider: '<cloud-provider>' # currently 'aws' and 'fly' are supported
+          provider: 'fly' # currently 'aws' and 'fly' are supported
           tailcall-config: 'config.graphql'
 
           # when deploying to aws
