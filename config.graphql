@@ -1,22 +1,15 @@
 schema
-  @upstream(baseURL: "http://jsonplaceholder.typicode.com") {
+  @upstream(baseURL: "http://jsonplaceholder.typicode.com")
+  @link(type: Config, src: "./user/user.graphql")
+  @link(type: Config, src: "./post.graphql")
+{
   query: Query
 }
 
 type Query {
   posts: [Post] @http(path: "/posts")
-  users: [User] @http(path: "/users")
-  user(id: Int!): User @http(path: "/users/{{.args.id}}")
 }
 
-type User {
-  id: Int!
-  name: String!
-  username: String!
-  email: String!
-  phone: String
-  website: String
-}
 
 type Post {
   id: Int!
