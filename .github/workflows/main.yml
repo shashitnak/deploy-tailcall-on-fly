@@ -23,5 +23,6 @@ jobs:
           terraform-api-token: ${{ secrets.TERRAFORM_API_TOKEN }}
 
           # when deploying to fly
+          fly-app-name: "tailcall"
           fly-api-token: ${{ secrets.FLY_API_TOKEN }}
           fly-region: "lax"
