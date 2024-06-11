@@ -24,5 +24,4 @@ jobs:
 
           # when deploying to fly
           fly-api-token: ${{ secrets.FLY_API_TOKEN }} 
-          fly-app-name: "tailcall"
           fly-region: "lax"
