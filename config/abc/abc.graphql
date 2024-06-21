@@ -1,8 +1,8 @@
 schema
-  @server(port: 9000)
+  @server(port: 9999)
   @upstream(baseURL: "http://jsonplaceholder.typicode.com")
-  @link(type: Config, src: "./user/user.graphql")
-  @link(type: Config, src: "./config/abc/post.graphql")
+  @link(type: Config, src: "../../user/user.graphql")
+  @link(type: Config, src: "../../post.graphql")
 {
   query: Query
 }
