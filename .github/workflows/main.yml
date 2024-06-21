@@ -13,7 +13,7 @@ jobs:
         with:
           # mandatory
           provider: 'fly' # currently 'aws' and 'fly' are supported
-          tailcall-config: './abc.graphql'
+          tailcall-config: './config/abc/abc.graphql'
 
           # when deploying to aws
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
